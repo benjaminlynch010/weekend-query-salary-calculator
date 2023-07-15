@@ -20,6 +20,9 @@ table with 6 columns
 
 ## jQuery ##
 
+<input> // element to recieve text input, usually with form control
+<input placeholder="text here"> // gave me placeholder text in text boxes
+
 labels displayed *inside* input boxes
   greyed out and removed on click? // probably, but not quite sure
 

@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <!-- link for cool text if time? -->
     <link rel="stylesheet" href="style.css" />
     <script src="jquery.js"></script>
     <script src="script.js"></script>
@@ -21,18 +18,19 @@
       <section>
         <h3>Enter Employee Information Here</h3>
         <!-- should form be styled to display differently? -->
-        <form>
-          <input placeholder="First Name" type="text" />
-          <input placeholder="Last Name" type="text" />
-          <input placeholder="ID Number" type="text" />
-          <input placeholder="Job Title" type="text" />
-          <input placeholder="Annual Salary" type="text" /> // type="number" ???
+        <form id="employeeInfo">
+          <input id="first-name-input" placeholder="First Name" type="text" />
+          <input id="last-name-input" placeholder="Last Name" type="text" />
+          <input id="id-number-input" placeholder="ID Number" type="text" />
+          <input id="job-title-input" placeholder="Job Title" type="text" />
+          <input id="salary-input" placeholder="Annual Salary" type="text" /> <!-- type="number" ??? -->
           <button class="submit-button">Submit</button>
         </form>
       </section>
 
     <section>
         <h3>Employee Information</h3>
+        <!-- table > thead > tr > th/td (header/body?) -->
         <table>
           <thead>
             <tr>
@@ -41,20 +39,18 @@
               <th>ID Number</th>
               <th>Job Title</th>
               <th>Annual Salary</th>
-              <th>Delete?</th>
+              <th>Delete?</th> 
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>first name input</td>
-              <td>last name input</td>
-              <td>...</td>
-            </tr>
+          <tbody id ="table">
+            <tr><!-- this is where i want the table appended --></tr>
           </tbody>
         </table>
       </section>
     </main>
 
-    <footer>Total Monthly: $</footer>
+    <footer>
+        <h5>Total Monthly: $</h5>
+    </footer>
   </body>
 </html>
