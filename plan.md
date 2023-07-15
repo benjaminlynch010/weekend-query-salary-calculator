@@ -41,7 +41,12 @@ submit button --> .on 'click'
   - remove corresponding row (including itself)
 
 footer
-if conditional > $20000
-use 2 classes 
+conditional 
+if > $20000
+  red background
+else not red
+
+append 2 separate classes?
+one for > $20000, one for < $20000?
 
   
