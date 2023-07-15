@@ -1,0 +1,34 @@
+/* global typography */
+body {
+    background-color: #dcdcdc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #313131;
+    font-size: 1.25em;
+}
+
+
+/* flexbox layout */
+html, body {
+    margin: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height: 8em;
+    background-color: red;
+    border: solid 3px black;
+    border-radius: 3px;
+    text-align: center;
+}
+main {
+    flex: auto;
+    max-width: 80%;
+    margin: auto;
+}
+footer {
+    height: 8em;
+    background-color: red;
+    text-align: right;
+}
