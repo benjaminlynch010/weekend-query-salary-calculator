@@ -18,17 +18,25 @@ body {
 header {
     height: 8em;
     background-color: red;
-    border: solid 3px black;
-    border-radius: 3px;
+    font-family: Helvetica, sans-serif;
     text-align: center;
 }
 main {
     flex: auto;
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
 }
 footer {
     height: 8em;
     background-color: red;
     text-align: right;
+}
+
+table, thead {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+tbody {
+    border: solid 1px black;
 }

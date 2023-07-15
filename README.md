@@ -23,6 +23,6 @@ total monthly cost in footer
   - store inputted salary ***as number***
   - sum new inputted salary
   - divide sum by 12 & store
-  - append to the footer
+  - append to the footer, remove old total
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
