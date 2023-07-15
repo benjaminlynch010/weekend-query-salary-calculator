@@ -18,7 +18,7 @@
       <section>
         <h3>Enter Employee Information Here</h3>
         <!-- should form be styled to display differently? -->
-        <form id="employeeInfo">
+        <form id="employee-info">
           <input id="first-name-input" placeholder="First Name" type="text" />
           <input id="last-name-input" placeholder="Last Name" type="text" />
           <input id="id-number-input" placeholder="ID Number" type="text" />
@@ -33,7 +33,7 @@
         <!-- table > thead > tr > th/td (header/body?) -->
         <table>
           <thead>
-            <tr>
+            <tr id="table-head">
               <th>First Name</th>
               <th>Last Name</th>
               <th>ID Number</th>
@@ -42,8 +42,8 @@
               <th>Delete?</th> 
             </tr>
           </thead>
-          <tbody id ="table">
-            <tr><!-- this is where i want the table appended --></tr>
+          <tbody id ="table-body">
+          <!-- this is where i want the table appended -->
           </tbody>
         </table>
       </section>

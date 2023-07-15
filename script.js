@@ -5,7 +5,7 @@ function onReady() {
 
     // handlers here
     $(".submit-button").on('click', handleSubmit)
-    $("#table").on('click', '#deleteButton', handleDelete)
+    $("#table-body").on('click', handleDelete)
 
 
 
@@ -22,19 +22,20 @@ function handleSubmit(event) {
     const jobTitle = $('#job-title-input').val()
     const annualSalary = $('#salary-input').val()
 
-$('#table').append(`
+$('#table-body').append(`
 <tr>
   <td>${firstName}</td>
   <td>${lastName}</td>
   <td>${idNumber}</td>
   <td>${jobTitle}</td>
   <td>${annualSalary}</td>
-  <td><button id='deleteButton'>Delete</button></td>
+  <td><button id='delete-button'>Delete</button></td>
 </tr>
 `)
 
 }
 
 function handleDelete() {
-    console.log('click --> inside of handleDelete')
+    console.log('this:', $(this))
+    $('#table-body').remove()
 }
