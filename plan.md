@@ -40,6 +40,8 @@ submit button --> .on 'click'
 'Delete' button --> .on 'click'
   - remove corresponding row (including itself)
 
-
+footer
+if conditional > $20000
+use 2 classes 
 
   

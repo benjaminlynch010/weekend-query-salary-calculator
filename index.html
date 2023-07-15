@@ -19,11 +19,12 @@
         <h3>Enter Employee Information Here</h3>
         <!-- should form be styled to display differently? -->
         <form id="employee-info">
-          <input id="first-name-input" placeholder="First Name" type="text" />
+          <!-- make sure to clear default values -->
+          <input id="first-name-input" placeholder="First Name" type="text" value="testName" />
           <input id="last-name-input" placeholder="Last Name" type="text" />
           <input id="id-number-input" placeholder="ID Number" type="text" />
           <input id="job-title-input" placeholder="Job Title" type="text" />
-          <input id="salary-input" placeholder="Annual Salary" type="text" /> <!-- type="number" ??? -->
+          <input id="salary-input" placeholder="Annual Salary" type="number" /> <!-- type="number" ??? -->
           <button class="submit-button">Submit</button>
         </form>
       </section>
@@ -42,15 +43,14 @@
               <th>Delete?</th> 
             </tr>
           </thead>
-          <tbody id ="table-body">
+          <tbody id="table-body">
           <!-- this is where i want the table appended -->
           </tbody>
         </table>
       </section>
     </main>
 
-    <footer>
-        <h5>Total Monthly: $</h5>
+    <footer id="monthly-total">Total Monthly Cost: $
     </footer>
   </body>
 </html>
