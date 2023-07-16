@@ -2,7 +2,6 @@
 body {
     background-color: #dcdcdc;
     background-image: url(background.png);
-
     font-family: 'Arsenal', sans-serif;
     color: white;
     font-size: 1.25em;
@@ -17,26 +16,12 @@ body {
     display: flex;
     flex-direction: column;
   }
-  header {
-    background-image: url(header-bg.png);
-    background-color: transparent;    
-    height: 157px;
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
-  }
   main {
     flex: auto;
     max-width: 80%;
     margin: auto;
   }
-  footer {
-    height: 100%;
-    background-color: #7a7a7a;
-    text-align: center;
-    font-size: .5em;
-    font-family: 'Bebas Neue', sans-serif;
-  }
-  
+
   
   /* HEADER/FOOTER */
     header, footer {
@@ -44,12 +29,34 @@ body {
     justify-content: flex-start;
     align-items: center;
   }
-  h1 {
+  header {
+    background-image: url(header-bg.png);
+    background-color: transparent;    
+    height: 157px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+  }
+      h1 {
     font-size: 4em;
     margin-top: 0.25em;
     margin-left: 0.25em;
   }
-  
+  footer {
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(212,19,0);
+    height: 100%;
+  }
+.container {
+    position: relative;
+}
+.footer-text {
+    position: absolute;
+    transform: translate(0, 60%);
+    font-size: 2em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
   
   /* FORM ELEMENTS */
   input {
