@@ -44,7 +44,6 @@ footer
 conditional 
 if > $20000
   red background
-else not red
 
 append 2 separate classes?
 one for > $20000, one for < $20000?

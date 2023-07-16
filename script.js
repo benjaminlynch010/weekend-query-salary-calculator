@@ -33,32 +33,30 @@ $("#table-body").append(`
     <td>${idNumber}</td>
     <td>${jobTitle}</td>
     <td>${annualSalary}</td>
-    <td><button id='delete-button'>Delete</button></td>
+    <td>
+      <button id='delete-button'></button>
+    </td>
   </tr>
 `);
 
+// clear input in text boxes
 $('#first-name-input').val("")
 $('#last-name-input').val("")
 $('#id-number-input').val("")
 $('#job-title-input').val("")
 $('#salary-input').val("")
 
-console.log(totalAnnualSalary)
-
+// declare variable to store monthly total cost
+// round it to nearest whole number 
 let monthlyTotal = Math.round(totalAnnualSalary / 12)
 console.log("Monthly Total is:", monthlyTotal)
 
-if (monthlyTotal > 20000) {
-$("#monthly-total").text(`
-Monthly Total: $${monthlyTotal}
-`);
-} 
+$(".monthly-total").text(`Monthly Total: $${monthlyTotal}`)
 
-else {
-  $("#monthly-total").text(`
-  Monthly Total: $${monthlyTotal}
-  `);
-}
+
+if (monthlyTotal > 20000) {
+  $('.monthly-total').addClass('red-background');
+} // end conditional  
 
 } // end handleSubmit
 
