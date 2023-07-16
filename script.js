@@ -36,11 +36,30 @@ $("#table-body").append(`
     <td><button id='delete-button'>Delete</button></td>
   </tr>
 `);
+
+$('#first-name-input').val("")
+$('#last-name-input').val("")
+$('#id-number-input').val("")
+$('#job-title-input').val("")
+$('#salary-input').val("")
+
 console.log(totalAnnualSalary)
 
-$("#monthly-total").append(`
-${Math.round(totalAnnualSalary / 12)}
+let monthlyTotal = Math.round(totalAnnualSalary / 12)
+console.log("Monthly Total is:", monthlyTotal)
+
+if (monthlyTotal > 20000) {
+$("#monthly-total").text(`
+Monthly Total: $${monthlyTotal}
 `);
+} 
+
+else {
+  $("#monthly-total").text(`
+  Monthly Total: $${monthlyTotal}
+  `);
+}
+
 } // end handleSubmit
 
 

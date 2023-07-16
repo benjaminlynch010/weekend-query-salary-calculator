@@ -1,9 +1,10 @@
 /* global typography */
 body {
-    background-color: #dcdcdc;
+    background-color: whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #313131;
     font-size: 1.25em;
+    font-variant: small-caps;
 }
 
 
@@ -16,27 +17,64 @@ body {
     flex-direction: column;
 }
 header {
-    height: 8em;
+    height: 2em;
     background-color: red;
+    color: white;
+    font-size: 1.5em;
     font-family: Helvetica, sans-serif;
     text-align: center;
 }
 main {
     flex: auto;
     max-width: 90%;
-    margin: auto;
+    margin: 10% 10% 0% 10%;
 }
 footer {
-    height: 8em;
-    background-color: red;
+    flex: auto;
+    height: 2em;
+    background-color: black;
+    color: white;
     text-align: right;
 }
+table {
+    width: 100%;
+    text-align: center; 
+    border: solid 20px black;
+}
 
-table, thead {
-    border: 3px solid black;
+table, th, td {
     border-collapse: collapse;
+    height: 2.15em;
+  }
+
+th, td {
+padding: .5em;
+min-width: 3.5em;
 }
 
-tbody {
-    border: solid 1px black;
+thead {
+background: red;
+color: #fcfcfc;
 }
+
+tbody tr:nth-child(odd){ 
+background-color: white;
+color: black;
+}
+
+tbody tr:nth-child(even){
+background-color: lightgrey;
+color: white;
+}
+
+
+
+/*
+.under-twenty {
+
+} 
+
+.over-twenty {
+    background-color: red;
+}
+*/

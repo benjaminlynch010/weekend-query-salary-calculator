@@ -19,15 +19,9 @@
         <h3>Enter Employee Information Here</h3>
         <!-- should form be styled to display differently? -->
         <form id="employee-info">
-          <!-- make sure to clear default values -->
-          <input
-            id="first-name-input"
-            placeholder="First Name"
-            type="text"
-            value="testName"
-          />
+          <input id="first-name-input" placeholder="First Name" type="text"/>
           <input id="last-name-input" placeholder="Last Name" type="text" />
-          <input id="id-number-input" placeholder="ID Number" type="text" />
+          <input id="id-number-input" placeholder="ID Number" type="number" />
           <input id="job-title-input" placeholder="Job Title" type="text" />
           <input id="salary-input" placeholder="Annual Salary" type="number" />
           <!-- type="number" ??? -->
@@ -50,14 +44,17 @@
             </tr>
           </thead>
           <tbody id="table-body">
-            <!-- this is where i want the table appended -->
+          <!-- input goes here -->
           </tbody>
         </table>
       </section>
+        <div id="monthly-total"></div>
     </main>
 
     <footer>
-      <span id="monthly-total">The Monthly Total: $
+      <p>
+
+      </p> 
       </span>
     </footer>
   </body>
