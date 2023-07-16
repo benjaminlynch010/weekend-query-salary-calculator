@@ -1,12 +1,8 @@
-# Project Name
+# Salary Calculator
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+## Problems
 
-## Description
-
-Problems: 
-
-how to create & style a table
+- how to create & style a table
   - looked up HTML formatting and made a reference cheatsheet
   - css ????
 
@@ -24,5 +20,3 @@ total monthly cost in footer
   - sum new inputted salary
   - divide sum by 12 & store
   - display under table, remove old total
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).

@@ -1,51 +1,42 @@
 ### Plan ###
 
-
 ## HTML ##
 
-html:5 template
-source css, javascript, jquery
+- `html:5` template
+- Source CSS, JavaScript, jQuery
 
-header - 'Salary Calculator'
-heading - 'Add Employee'
-footer - 'Total Monthly'
+- **Header:** 'Salary Calculator'
+- **Heading:** 'Add Employee'
+- **Footer:** 'Total Monthly'
 
-create form with 5 input boxes  // what's correct syntax?  
+- Create a form with 5 input boxes
+- Create a 'Submit' button
 
-create 'Submit' button
-
-table heading - 'Employees'
-
-table with 6 columns
+- **Table Heading:** 'Employees'
+- Create a table with 6 columns
 
 ## jQuery ##
 
-<input> // element to recieve text input, usually with form control
-<input placeholder="text here"> // gave me placeholder text in text boxes
+- `<input>`: Element to receive text input, usually with a form control
+- `<input placeholder="text here">` - Placeholder text in text boxes
 
-labels displayed *inside* input boxes
-  greyed out and removed on click? // probably, but not quite sure
+- Labels displayed *inside* input boxes, greyed out and removed on click
 
-submit button --> .on 'click'
-  - collects form input
-    - where is it? selector
-    - where is it going? append new row to table // #id or .class?
-      - inside appended row create 'Delete' button
-    - call function(s)
-      - store totalSalary
-      - add incoming input to totalSalary
-      - total Salary / 12
-      - displayed in footer
+- **Submit Button**: `.on('click')`
+  - Collects form input
+    - Selector: Where is the input located?
+    - Append new row to table: Where is it going?
+      - Inside the appended row, create a 'Delete' button
+    - Call function(s)
+      - Store `totalSalary`
+      - Add incoming input to `totalSalary`
+      - `totalSalary / 12`
+      - Display in footer
 
-'Delete' button --> .on 'click'
-  - remove corresponding row (including itself)
+- **'Delete' Button**: `.on('click')`
+  - Remove corresponding row (including itself)
 
-footer
-conditional 
-if > $20000
-  red background
-
-append 2 separate classes?
-one for > $20000, one for < $20000?
+- Conditional (`if > $20000`) to add a separate class
+  - Style with different background colors
 
   
