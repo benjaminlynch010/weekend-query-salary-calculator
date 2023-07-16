@@ -1,130 +1,133 @@
 /* GLOBAL TYPOGRAPHY */
 body {
-    background-color: #dcdcdc;
-    background-image: url(background.png);
-    font-family: 'Arsenal', sans-serif;
-    color: white;
-    font-size: 1.25em;
-  }
-    
-  FLEXBOX LAYOUT
-  html, body {
-    min-height: 100vh;
-    margin: auto;
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  main {
-    flex: auto;
-    max-width: 80%;
-    margin: auto;
-  }
+  background-color: #dcdcdc;
+  background-image: url(background.png);
+  font-family: "Arsenal", sans-serif;
+  color: white;
+  font-size: 1.25em;
+}
 
-  
-  /* HEADER/FOOTER */
-    header, footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  header {
-    background-image: url(header-bg.png);
-    background-color: transparent;    
-    height: 157px;
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
-  }
-      h1 {
-    font-size: 4em;
-    margin-top: 0.25em;
-    margin-left: 0.25em;
-  }
-  footer {
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(212,19,0);
-    height: 100%;
-  }
+
+/* FLEXBOX LAYOUT  */
+html, body {
+  min-height: 100vh;
+  margin: auto;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: auto;
+  max-width: 80%;
+  margin: auto;
+}
+
+
+/* HEADER/FOOTER */
+header, footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header {
+  background-image: url(header-bg.png);
+  background-color: transparent;
+  height: 157px;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+h1 {
+  font-size: 4em;
+  margin-top: 0.25em;
+  margin-left: 0.25em;
+}
+footer {
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(212, 19, 0);
+  height: 100%;
+}
 .container {
-    position: relative;
+  position: relative;
 }
 .footer-text {
-    position: absolute;
-    transform: translate(0, 60%);
-    font-size: 2em;
-    font-family: 'Bebas Neue', sans-serif;
+  position: absolute;
+  transform: translate(0, 60%);
+  font-size: 2em;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-  
-  /* FORM ELEMENTS */
-  input {
-    padding: .5em;
-    width: 150px;
-    background: #FCFCFC;
-    border: 1px solid;
-  }
-  button {
-    padding: .5em;
-    width: 75px;
-  }
-  
-  
-  /* TABLE */
-  table {
-    width: 100%;
-    text-align: center;    
-    border: 1px solid white;
-    border-collapse: collapse;
-  }
-  table, th, td {
+/* FORM ELEMENTS */
+input {
+  padding: 0.5em;
+  width: 150px;
+  background: #fcfcfc;
+  border: 1px solid;
+}
+button {
+  padding: 0.5em;
+  width: 75px;
+}
 
-    height: 2.15em;
-  }
-  th, td {
-    padding: .5em;
-    min-width: 3.5em;
-  }
-  thead {
-    background: rgb(125, 10, 10);
-    color: #fcfcfc;
-  }
-  tbody tr:nth-child(odd){ 
-    background: rgba(215, 90, 90, 0.95);
-  }
-  tbody tr:nth-child(even){
-    background: rgba(125, 10, 10, 0.95);
-  }
+/* TABLE */
+table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+table, th, td {
+  height: 2.15em;
+}
+th, td {
+  padding: 0.5em;
+  min-width: 3.5em;
+}
+thead {
+  background: rgb(125, 10, 10);
+  color: #fcfcfc;
+}
+tbody tr:nth-child(odd) {
+  background: rgba(215, 90, 90, 0.95);
+}
+tbody tr:nth-child(even) {
+  background: rgba(125, 10, 10, 0.95);
+}
 
-  /* DELETE BUTTON */
-  #delete-button {
-    float:inline-end;
-    background-image: url(clear-button.png);
-    background-size: cover;
-    background-color: transparent;
-    height: 64px;
-    width: 64px;
-    padding: 0;
-    border: none;
-    padding: none;
-  }
-  #delete-button:hover {
-    margin-left: 4px;
-  }
 
-  .monthly-total {
-    background: black;
-    color: white;
-    border: solid 1px white;
-    text-align: right;
-    height: 3em;
-    justify-content: flex-end;
-    align-items: center;
-  }
+/* DELETE BUTTON */
+#delete-button {
+  float: inline-end;
+  background-image: url(clear-button.png);
+  background-size: cover;
+  background-color: transparent;
+  height: 64px;
+  width: 64px;
+  padding: 0;
+  border: none;
+  padding: none;
+}
+#delete-button:hover {
+  margin-left: 4px;
+}
 
-  /* BACKGROUND FOR CONDITIONAL */
+
+/* MONTHLY TOTAL DISPLAY */
+.monthly-total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0.5em;
+  background: black;
+  color: white;
+  border: solid 1px white;
+  height: 3em;
+  margin-bottom: 3em;
+}
+
+/* MONTHLY TOTAL DISPLAY ON CONDITION */
 .red-background {
-    background-color: rgb(215, 25, 25);
-    border: 2px dashed white;
+  background-color: rgb(215, 25, 25);
+  border: 2px dashed white;
 }
