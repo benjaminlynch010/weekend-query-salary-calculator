@@ -1,0 +1,17 @@
+{
+  "name": "weekend-query-salary-calculator",
+  "version": "1.0.0",
+  "description": "## Problems",
+  "main": "jquery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.2"
+  }
+}
